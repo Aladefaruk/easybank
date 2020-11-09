@@ -1,0 +1,1045 @@
+/**************LANDING PAGE******************/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    background: hsl(0, 0%, 98%);
+    display: relative;
+    font-family: Public Sans;
+}
+
+.backdrop {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+
+}
+
+.button {
+    outline: none;
+}
+
+.button:active {
+    filter: contrast(0.7);
+}
+.main-header {
+    width: 100%;
+    margin: 0 auto;
+    padding: 19px;
+    position: fixed ;
+    top: 0;
+    background: white;
+    z-index: 120;
+
+}
+
+.main-nav__item {
+    display: inline-block;  
+}
+
+.main-nav__items {
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav {
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 165px);
+    vertical-align: middle;
+}
+
+.nav_button {
+    margin: 25px auto;
+    width: 15%;
+    padding: 12px;
+    border-radius: 25px;
+    border: none;
+    display: none;
+    vertical-align: middle;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 40px;
+    font-weight: 400;
+    outline: none;
+    background: linear-gradient(to right,hsl(136, 65%, 51%),hsl(192, 70%, 51%));
+}
+
+.nav_button:active {
+    filter: contrast(0.6);
+}
+
+#logo {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    margin-left: 15px;
+}
+
+.logoimg {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-nav__item a {
+    display: none; 
+    text-decoration: none;
+    color: hsl(233, 8%, 62%);
+    margin-bottom: -1px;
+}
+
+.main-nav__item a:hover {
+    color: black;
+}
+
+.main-nav__item a:active {
+    border-bottom: 6px solid transparent;
+    padding: 18px; 
+    border-image: linear-gradient(to right,hsl(136, 65%, 51%),hsl(192, 70%, 51%));
+    border-image-slice: 1;
+}
+
+.mobile-nav {
+    display: none;
+    position: fixed;
+    z-index: 120;
+    background: white;
+    width: 80%;
+    top: 110px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 10px;
+}
+
+.mobile-nav__items {
+    width:100%;
+    height: auto;
+    list-style: none;
+    margin:1% auto;
+    padding: 0;
+    text-align: center;
+}
+
+.mobile-nav__item {
+    margin: 30px 0;
+   
+}
+
+.mobile-nav__item a {
+    margin: 1rem 0;
+    color: hsl(233, 26%, 24%);
+    font-size: 22px;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+ 
+
+.toggles-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding-top: 0;
+    padding-bottom: 0;
+    vertical-align: middle;
+    outline: none; 
+    display: inline-block;      
+}
+
+.intro_sec {
+    width: 100%;
+    height: 452px;
+    margin: 0 0;
+    background-image: url("easybank-landing-page-master/images/bg-intro-mobile.svg");
+    background-size: cover;
+}
+
+.intro_secbg {
+    width: 90%;
+    height: 390px;
+    margin: 0 auto;
+    margin-top: -25px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.intro_sec h1,.sec_article h1  {
+    font-weight: 400;
+    font-size: 45px;
+    text-align: center;
+    margin: 10px 20px;
+    color: hsl(233, 26%, 24%);
+}
+
+.intro_sec p, .sec_offers p {
+    font-weight: 300;
+    text-align: center;
+    margin: 0 20px;
+    line-height: 23px;
+    color: hsl(233, 8%, 62%);
+}
+
+.intro_note {
+    margin-top: 0%;
+}
+
+.button {
+    margin: 25px auto;
+    padding: 14px;
+    width: 40%;
+    border-radius: 25px;
+    border: none;
+    display: flex;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 400;
+    background: linear-gradient(to right,hsl(136, 65%, 51%),hsl(192, 70%, 51%));
+}
+
+.sec_offers {
+    margin-top: 290px;
+    background: hsl(220, 16%, 96%);
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+
+
+.sec_offers_intro {
+    padding: 40px 0 ;
+}
+
+.sec_offers h1 {
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    margin: 20px 20px;
+    color: hsl(233, 26%, 24%);
+}
+
+.sec_offer p {
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 20px;
+    color: hsl(233, 26%, 24%);
+}
+.sec_offer {
+    margin: 40px 10px;
+    color: hsl(233, 26%, 24%);
+}
+
+.sec_offer_img {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sec_article {
+    background: hsl(0, 0%, 98%);
+    margin-top: -20px;
+    padding: 70px 0 50px 0;
+}
+.sec_article_card {
+    width: 85%;
+    height: auto;
+    border-radius: 10px;
+    margin: 40px auto;
+    background: white;
+    color:hsl(233, 8%, 62%);
+    padding-bottom: 40px;
+}
+
+.sec_article_img {
+    width: 100%;
+    height: 50%;
+    margin-bottom: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sec_article_card small, .sec_article_card h3,.sec_article_card p {
+    margin:10px 20px;
+}
+.sec_article_card h3{
+    color: hsl(233, 26%, 24%);
+    cursor: pointer;
+}
+.sec_article_card h3 a:active{
+    color: hsl(136, 65%, 51%);
+    
+}
+
+
+.sec_article_card p{
+    color: hsl(233, 26%, 24%);
+}
+
+.footer {
+    width: 100%;
+    background:hsl(233, 26%, 24%);
+    text-align: center;
+    padding-bottom: 60px;
+    padding-top: 40px;
+}
+
+.socials a img {
+    margin-right: 10px;
+    cursor: pointer;
+    
+}
+
+.socials a:active img  {
+    filter: brightness(0.5) sepia(1) saturate(10000%) hue-rotate(136deg);
+}
+
+.footer_links {
+    list-style: none;
+    margin-right: 30px;
+}
+
+.footer_link {
+    margin: 20px auto;
+}
+
+.footer_link a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.footer_logo {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto 20px auto;
+}
+
+.footer small{
+    color: hsl(233, 8%, 62%);
+    font-size: 15px;
+}
+
+@media only screen and (min-width: 650px) {
+    .main-nav__item a {
+        margin-right: 10px;
+        display: inline-block;
+           
+    }
+
+    .main-nav {
+        display: inline-block;
+        margin: -35px auto;
+    
+    }
+
+    .main-nav__items {
+        display: inline-block;
+         
+    }
+
+    .toggles-button {
+        display: none;       
+    }
+
+    .nav_button {
+        width: 130px;
+        display: inline-block;
+       
+    } 
+    
+    .intro_sec {
+        height: 400px;
+        position: relative;
+        background-color: hsl(0, 0%, 98%);
+        background-image: url("easybank-landing-page-master/images/bg-intro-desktop.svg");
+        background-size: 70%;
+        background-repeat: no-repeat;
+        background-position:155% 0%;
+        margin-bottom: -300px;
+
+    }
+
+    .intro {    
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .intro_secbg {
+        width: 55%;
+        height: 550px;
+        position: relative;
+        left: 242px;
+        
+    }
+
+    .intro_note {
+        position: absolute;
+        width: 30%;
+        display: inline-block;
+        top:120px;
+        left: 100px;
+    }
+
+    
+    .intro_note p, .intro_note h1 {
+        width: 100%;  
+        text-align: left;
+        margin: 10px auto;
+    }
+
+    .intro_note p {
+        font-size: 15px;
+        margin: 30px 0;
+    }
+
+    .intro_note h1 {
+      font-size: 25px;
+    }
+
+    .intro_note .button {
+        margin-left: 2px;
+        font-size: 15px;
+        width: fit-content;
+        height: 40px;
+    }
+
+    .sec_offers {
+        padding: 0px 0px;
+    }
+
+    .sec_offer h3 {
+        color: hsl(233, 26%, 24%);
+        font-size: 17px;
+        margin-top: 20px;
+        margin-bottom: 0;
+        text-align: left;
+        margin-left: 18px;
+    }
+
+    .sec_offer p {
+        color: hsl(233, 26%, 24%);
+        font-size: 15px;
+        margin-top: 20px;
+        margin-bottom: 0;
+        text-align: left;
+    }
+    
+    .sec_offer_img {
+        width: 30px;
+        height: 30px;
+        margin: 0 0;
+        margin-bottom: 50px;
+        margin-left: 15px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .sec_offers_intro {
+        width: 60%;
+        margin-left: 3%;
+        margin-top: 50px;
+        margin-bottom: -20px;
+    }
+
+    .sec_offers_intro p {
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .sec_offers_ex {
+        display: flex;
+    }
+
+    .sec_offers h1 {
+        font-weight: 400;
+        font-size: 30px;
+        text-align: left;
+        margin: 20px 20px;
+        color: hsl(233, 26%, 24%);
+    }
+
+    .sec_article {
+        background: hsl(0, 0%, 98%);
+        margin-top: 0px;
+        padding: 20px 20px 20px 20px;
+    }
+
+    .sec_article h1 {
+        text-align: left;
+        font-size: 33px;
+    }
+
+    .sec_article_card_cover{
+        display: flex;
+    }
+
+    .sec_article_card {
+        border-radius: 10px;
+        margin: 30px 20px;
+        width: 50%;
+        background: white;
+        color:hsl(233, 8%, 62%);
+        margin-bottom: 50px;
+    }
+    
+    .sec_article_img {
+        width: 100%;
+        height: 30%;
+        margin-bottom: 20px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .sec_article_card small, .sec_article_card h3,.sec_article_card p {
+        margin: 10px 10px;
+    }
+    
+    .sec_article_card h3{
+        color: hsl(233, 26%, 24%);
+        font-size: 17px;
+    }
+    .sec_article_card p {
+        font-size: 15px;
+        line-height: 19px;
+    }
+
+    .footer {
+        background:rgb(45, 49, 77);
+        width: 100%;
+        height: 220px;
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    .socials {
+        margin: 0px 1px;
+        margin-top: -40px;
+    }
+
+    .footer_grp1 {
+        margin: 0 0px;
+        margin-top: 50px;
+    }
+
+    .footer_grp2 {
+        margin: 0 20px;
+    }
+    
+    .footer_links {
+        list-style: none;
+        display: flex;
+        margin-right: 100px;
+        margin-top: 40px;
+    }
+    
+    .footer_link {
+        margin: 20px auto;
+        text-align: left;
+    }
+    
+    .footer_link a {
+        text-decoration: none;
+        color: white;
+        font-size: 17px;
+    }
+
+    .footer_link a:active {
+        text-decoration: none;
+        color: limegreen;
+        
+    }
+
+    .footer .button {
+        width: 125px;
+    }
+    
+    .footer_logo {
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+    }
+
+}
+
+@media screen and (min-width: 1030px) {
+    .main-nav__item a {
+        margin-right: 28px;
+        display: inline-block;
+    }
+
+    .main-nav {
+        width: calc(100% - 23%);
+        margin: -35px auto;
+        display: inline-block;
+    }
+
+    .main-nav__items {
+        margin-right: 20%;
+    }
+
+    .toggles-button {
+        display: none;       
+    }
+
+    .nav_button {
+        width: 170px;
+        display: inline-block;
+    }   
+
+    #logo {
+        margin-left: 80px;
+    }
+    
+    .intro_sec {
+        height: 700px;
+        position: relative;
+        background-color: hsl(0, 0%, 98%);
+        background-image: url("easybank-landing-page-master/images/bg-intro-desktop.svg");
+        background-size: 70%;
+        background-repeat: no-repeat;
+        background-position:155% 85%;
+        margin-bottom: -300px;
+    }
+
+    .intro {    
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .intro_secbg {
+        position: relative;
+        width: 50%;
+        height: auto;
+        left: 530px;
+        bottom: 45px;
+    }
+
+    .intro_note {
+        position: absolute;
+        width: 30%;
+        display: inline-block;
+        top:180px;
+        left: 200px;
+    }
+
+    
+    .intro_note p, .intro_note h1 {
+        width: 100%;  
+        text-align: left;
+        margin: 10px auto;
+    }
+
+    .intro_note p {
+        font-size: 20px;
+        margin: 30px 0;
+    }
+
+    .intro_note h1 {
+      font-size: 53px;
+    }
+
+    .intro_note .button {
+        margin-left: 2px;
+        font-size: 16px;
+        padding-bottom: 5px;
+        vertical-align: middle;
+    
+    
+    }
+
+
+    .sec_offers_ex {
+        display: flex;
+    }
+
+
+    .sec_offer {
+        font-weight: 400;
+        font-size: 40px;
+        margin: 2% 7%;
+        color: hsl(233, 26%, 24%);
+        text-align: left;
+
+    }
+
+    .sec_offer p {
+        text-align: left;
+        margin: 2px 0;
+        width: 100%;
+    }
+
+    .sec_offers {
+        padding: 30px 40px;
+    }
+
+    .sec_offer h3 {
+        color: hsl(233, 26%, 24%);
+        font-size: 20px;
+        margin: 20px 0;
+        margin-left: 0;
+        
+    }
+
+    
+    .sec_offer_img {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+        margin-left: -1px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .sec_offers_intro {
+        width: 40%;
+        margin-left: 6%;
+        margin-top: 50px;
+    }
+
+    .sec_offers_intro p {
+        text-align: left;
+    }
+
+    .sec_offers h1 {
+        font-weight: 400;
+        font-size: 40px;
+        text-align: left;
+        margin: 20px 20px;
+        color: hsl(233, 19%, 37%);
+    }
+
+    .sec_article {
+        background: hsl(0, 0%, 98%);
+        margin-top: -20px;
+        padding: 70px 50px 40px 50px;
+    }
+
+    .sec_article h1 {
+        text-align: left;
+        font-size: 40px;
+    }
+
+    .sec_article_card_cover{
+        display: flex;
+    }
+    .sec_article_card {
+        border-radius: 10px;
+        margin: 40px 20px;
+        background: white;
+        color:hsl(233, 8%, 62%);
+        padding-bottom: 40px;
+    }
+    
+    .sec_article_img {
+        width: 100%;
+        height: 50%;
+        margin-bottom: 20px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .sec_article_card small, .sec_article_card h3,.sec_article_card p {
+        margin: 10px 20px;
+    }
+    
+    .sec_article_card h3{
+        color: hsl(233, 26%, 24%);
+    }
+
+    .footer {
+        background:rgb(45, 49, 77);
+        width: 100%;
+        height: 220px;
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    .socials {
+        margin: 0px 10px;
+        margin-top: -40px;
+    }
+
+    .footer_grp1 {
+        margin: 0 90px;
+        margin-top: 50px;
+    }
+
+    .footer_grp2 {
+        margin: 0 40px;
+    }
+    
+    .footer_links {
+        list-style: none;
+        display: flex;
+        margin-right: 100px;
+        margin-top: 40px;
+    }
+    
+    .footer_link {
+        margin: 20px auto;
+        text-align: left;
+    }
+    
+    .footer_link a {
+        text-decoration: none;
+        color: white;
+        font-size: 17px;
+    }
+
+    .footer_link a:active {
+        text-decoration: none;
+        color: limegreen;
+        
+    }
+
+    .footer .button {
+        width: 200px;
+    }
+    
+    .footer_logo {
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+    }
+    
+}
+
+/************** END LANDING PAGE ******************/
+
+
+/************** REGISTER PAGE ******************/
+*{
+    box-sizing: border-box;
+
+}
+.body {
+    background: hsl(233, 8%, 62%);
+    padding: 0;
+    font-family: Public Sans;
+    
+}
+
+#container{
+    width: 80%;
+    margin: 10% auto;
+    margin-top: 130px;
+    border-radius: 20px;
+    padding: 5%;
+    font-size: 18px;
+    background:  hsl(0, 0%, 98%);
+}
+
+.sign_up {
+    color: hsl(233, 26%, 24%);
+}
+
+.message {
+    border-bottom: 1px solid rgb(158, 158, 158);
+    padding-bottom: 2%;
+    margin-top: -5px;
+    font-size: 17px;
+    text-align: left;
+       
+}
+
+label {
+    font-size: 16px;
+    color: hsl(233, 26%, 24%);
+}
+
+input {
+    display: block;
+    margin-bottom: 7%;
+    font-size: 14px;
+    border-radius: 10px;
+    width: 70%;  
+    height: 30px; 
+    margin-top: 2%;
+    outline: none;
+}
+
+.login {
+    font-size: 17px;
+    text-align: center;
+    border-top: 1px solid rgb(158, 158, 158);
+    padding-top: 2%;
+    font-size: 17px;
+    text-align: center;
+    color: hsl(233, 26%, 24%)
+    ;
+}
+
+.login a {
+    text-decoration: none;
+    color: rgba(128, 128, 128, 0.694);
+}
+
+.login a:active{
+    color: hsl(136, 65%, 51%);
+}
+
+.submit {
+    font-size: 17px;
+    width: 100%;
+    height: 35px;
+    vertical-align: middle;
+    border-radius: 10px;
+    margin: 5% 0;
+    cursor: pointer;
+}
+
+.submit:enabled {
+    background: linear-gradient(to right,hsl(136, 65%, 51%),hsl(192, 70%, 51%));
+    color: white;
+    outline: none;
+    border: none;
+}
+
+#message{
+    font-size: 15px;
+    display: block;
+}
+#passw{
+    font-size: 15px;
+    display: block;
+}
+#validemail{
+    font-size: 15px;
+    display: block;
+}
+
+@keyframes spin{
+    from{ transform: rotate (0deg);
+    }
+    to{ transform: rotate(360deg);}
+}
+.loading_ring{
+    width: 10px;
+    height: 10px;
+    border: 1px dashed white;
+    border-radius: 100%;
+    animation: spin 2s infinite linear;
+    display: none;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+@media only screen and (min-width: 1400px) {
+        #container{
+            width:40%;
+            margin-top: 150px;
+            margin-bottom: 5%;
+            padding: 30px 60px;
+        }
+        
+        label {
+            font-size: 30px;
+            
+        }
+        input {
+            display: block;
+            margin-bottom: 7%;
+            border-radius: 10px;
+            width: 70%;  
+            height: 30px; 
+            margin-top: 2%;
+            font-size: 15px;
+            outline: none;
+        }
+
+        .message {
+            border-bottom: 3px solid rgb(158, 158, 158);
+            padding-bottom: 2%;
+            margin-top: -5px;
+            font-size: 22px;
+            text-align: left;
+            color: hsl(233, 8%, 62%);   
+        }
+        .sign_up {
+            text-align: left;
+            font-size: 35px;
+            font-family: Public Sans;
+        }
+
+        .login {
+            font-size: 25px;
+            text-align: center;
+            border-top: 3px solid rgb(158, 158, 158);
+            padding-top: 2%;
+            text-align: center;
+    
+        }
+
+        .submit {
+            font-size: 24px;
+            height: 40px;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .submit:enabled {
+            background: linear-gradient(to right,hsl(136, 65%, 51%),hsl(192, 70%, 51%));
+            color: white;
+            outline: none;
+        }
+
+        #message{
+            font-size: 20px;
+            display: block;
+        }
+        #passw{
+            font-size: 20px;
+            display: block;
+        }
+        #validemail{
+            font-size: 20px;
+            display: block;
+        }
+        
+        @keyframes spin{
+            from{ transform: rotate (0deg);
+            }
+            to{ transform: rotate(360deg);}
+        }
+
+        .loading_ring{
+            width: 20px;
+            height: 20px;
+            border: 2px dashed white;
+            border-radius: 100%;
+            animation: spin 2s infinite linear;
+            display: none;
+            vertical-align: middle;
+            margin-left: 10px;
+        }
+}
+
+/**************END REGISTER PAGE******************/

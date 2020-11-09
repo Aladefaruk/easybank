@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>easybank register page</title>
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="https://fonts.google.com/specimen/Public+Sans"/>
+        <link rel="shortcut icon" type="image/png" href="easybank-landing-page-master/images/favicon-32x32.png"/>
+    </head>
+    <body class="body">
+        <div class="backdrop"></div>
+        <header class="main-header"> 
+            <div id="logo">
+                <a href="landing.html"><img src="easybank-landing-page-master/images/logo.svg" alt="" class="logoimg"></a>
+              </div>
+    <nav class="main-nav">
+        <ul class="main-nav__items">
+            <li  class="main-nav__item">
+                <a href="landing.html">Home</a>
+            </li>
+            <li class="main-nav__item">
+                <a href="about/index.html">About</a>
+            </li>
+            <li class="main-nav__item">
+                <a href="contact/index.html">Contact</a>
+            </li>
+            <li class="main-nav__item">
+                <a href="blog/index.html">Blog</a>
+            </li>
+            <li class="main-nav__item">
+                <a href="careers/index.html">Careers</a>
+            </li> 
+            <img src="easybank-landing-page-master/images/icon-hamburger.svg" alt=""  class="toggles-button">
+        </ul> 
+        <button class="nav_button"> Request Invite</button> 
+    </nav>
+        </header>
+        <nav class="mobile-nav">
+        <ul class="mobile-nav__items">
+            <li class="mobile-nav__item">
+                <a href="landing.html">Home</a>
+            </li>
+            <li class="mobile-nav__item">
+                <a href="#">About</a>
+            </li>
+            <li class="mobile-nav__item">
+                <a href="#">Contact</a>
+            </li> 
+            <li class="mobile-nav__item">
+                <a href="#">Blog</a>
+            </li> 
+            <li class="mobile-nav__item">
+                <a href="#">Careers</a>
+            </li>     
+        </ul>
+        </nav>
+        <main>
+        <form id='container' method="POST" >
+            <h2 class="sign_up">Sign Up</h2>
+            <p class='message'>Join our amazing world today!</p>
+            <label for='firstName' >First Name: </label>  <input type="name" onkeydown="return alphaOnly(event)" required name='firstName' class='firstName'/>
+            <label for='lastName'>Last Name: </label>  <input type="name" onkeydown="return alphaOnly(event)" required name='lastName'  class='lastName'/>
+            <label for='email'>Email: <span id='validemail'></span></label>  <input type="email"  name='email' onkeyup='validEmail();' class='email'/>
+            <label for='password'> Enter Password: <span id='passw'></span></label><input type="password"  onkeyup="passwordLen(); passwordCheck()" name='password' class='password'/> 
+            <label for='con_password'> Confirm Password:<span id='message'></span></label><input type="password" onkeyup="passwordCheck(); enableButton()"  min="8" name='con_password' class='con_password'/>          
+             <button type='button' value='Register'  class='submit' disabled onclick="load(); loading()">Register<div class='loading_ring'></div></button>
+             <p class='login'>Already have an account? <a href="login.html"> Log In</a></p>
+             </form>
+             <footer class="footer">
+                <div class="footer_grp1">
+                <div class="footer_logo">
+                    <a href="landing.html"><img src="easybank-landing-page-master/images/logo.svg" alt="" class=""></a>
+                  </div>
+                  <div class="socials">
+                      <a href="#"><img src="easybank-landing-page-master/images/icon-facebook.svg"></a>
+                      <a href="#"><img src="easybank-landing-page-master/images/icon-youtube.svg"></a>
+                      <a href="#"><img src="easybank-landing-page-master/images/icon-twitter.svg"></a>
+                      <a href="#"><img src="easybank-landing-page-master/images/icon-pinterest.svg"></a>
+                      <a href="#"><img src="easybank-landing-page-master/images/icon-instagram.svg"></a>
+                  </div>
+                </div>
+                  <div class="links" class="footer_grp1">
+                    <ul class="footer_links footer_grp1">
+                        <div class="footer_grp2">
+                        <li  class="footer_link">
+                            <a href="#">About Us</a>
+                        </li>
+                        <li class="footer_link">
+                            <a href="#">Contact</a>
+                        </li>
+                        <li class="footer_link">
+                            <a href="#">Blog</a>
+                        </li>
+                        </div>
+                        <div class="footer_grp2">
+                        <li class="footer_link">
+                            <a href="#">Careers</a>
+                        </li>
+                        <li class="footer_link">
+                            <a href="#">Support</a>
+                        </li>
+                        <li class="footer_link">
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                    </div>
+                    </ul>
+                  </div>
+                  <div class="footer_grp1">
+                  <button class="button"> Request Invite</button>
+                  <small>© Easybank. All Rights Reserved</small>
+                  </div>
+            </footer>
+            </main>
+<script  type="text/javascript" src="form.js"></script>
+    </body>
+</html>
